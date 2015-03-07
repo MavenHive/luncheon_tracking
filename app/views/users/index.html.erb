@@ -3,7 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>User Name</th>
+      <th>Display Name</th>
       <th>Attends Office?</th>
       <th>Eats in office?</th>
       <th>Usual arrival time</th>
@@ -14,7 +15,8 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name %></td>
+        <td><%= user.user_name %></td>
+        <td><%= user.display_name %></td>
         <td><%= user.usually_attends_office %></td>
         <td><%= user.usually_eats_in_office %></td>
         <td><%= user.usual_arrival_time.strftime("%I:%M %p") %></td>

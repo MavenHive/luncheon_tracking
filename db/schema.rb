@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150307112336) do
+ActiveRecord::Schema.define(version: 20150307155929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "office_attendances", force: true do |t|
+    t.integer  "User_id"
+    t.boolean  "attending_office"
+    t.time     "arriving_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "user_name"

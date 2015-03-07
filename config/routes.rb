@@ -9,7 +9,6 @@ Rails.application.routes.draw do
     post '/office_attendance', to: 'office_attendance#update'
   end
 
-  resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

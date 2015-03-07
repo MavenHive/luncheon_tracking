@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails luncheon_tracking: development" uuid="71e72661-ddac-408a-b173-7d8a526ebfe1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails luncheon_tracking: test" uuid="1c8198b6-d442-473d-b786-88d01ea1896b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails luncheon_tracking: e2e" uuid="8d21819c-247f-4031-a6d7-bca051a0509d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails luncheon_tracking: production" uuid="63185cde-4273-40ca-ac53-e2d270989764">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

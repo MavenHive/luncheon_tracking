@@ -6,7 +6,7 @@ module Api
       if user
         text = params.permit('text')['text']
         attending_office = (text =~ (/^(true|t|yes|y|1)$/i) ? true : false)
-        OfficeAttendance.create!(user: user, attending_office: attending_office)
+        OfficeAttendance.create!(user: user, attending_office: attending_office, arriving_time: user.usual_arrival_time)
       end
       render nothing: true
     end

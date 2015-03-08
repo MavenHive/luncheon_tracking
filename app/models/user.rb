@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
       if attendance && attendance.attending_office
         all_attendances << attendance
       elsif user.usually_attends_office
-        all_attendances << OfficeAttendance.new(user: user, attending_office_today: true, arriving_time: user.usual_arrival_time)
+        all_attendances << OfficeAttendance.new(user: user, attending_office: true, arriving_time: user.usual_arrival_time)
       end
     end
     all_attendances

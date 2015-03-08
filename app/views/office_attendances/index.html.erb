@@ -7,9 +7,8 @@
     <li><%= attendance.user.display_name %> at <%= attendance.arriving_time.strftime("%I:%M %p") %> </li>
   <% end %>
 </ul>
-<br/>
 
-<h3>People Having Lunch in Office :-</h3>
+<h3>Lunch will be arranged at 1:00 pm for :-</h3>
 
 <ul>
   <% @lunch_in_office.each do |user| %>

@@ -12,12 +12,12 @@
 
 <p>
   <strong>Usually attends office:</strong>
-  <%= @user.usually_attends_office %>
+  <%= @user.usually_attends_office  ? 'Yes' : 'No'%>
 </p>
 
 <p>
   <strong>Usually eats in office:</strong>
-  <%= @user.usually_eats_in_office %>
+  <%= @user.usually_eats_in_office  ? 'Yes' : 'No'%>
 </p>
 
 <p>

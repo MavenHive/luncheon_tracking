@@ -18,8 +18,8 @@
       <tr>
         <td><%= user.user_name %></td>
         <td><%= user.display_name %></td>
-        <td><%= user.usually_attends_office %></td>
-        <td><%= user.usually_eats_in_office %></td>
+        <td><%= user.usually_attends_office ? 'Yes' : 'No' %></td>
+        <td><%= user.usually_eats_in_office ? 'Yes' : 'No' %></td>
         <td><%= user.usual_arrival_time.strftime("%I:%M %p") %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>

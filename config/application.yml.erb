@@ -1,0 +1,8 @@
+defaults: &defaults
+  twilio_sid: <%= ENV['TWILIO_SID'] %>
+  twilio_phone_number: <%= ENV['TWILIO_PHONE_NUMBER'] %>
+  number_to_send_to: <%= ENV['NUMBER_TO_SEND_TO'] %>
+  twilio_token: <%= ENV['TWILIO_TOKEN'] %>
+  
+development:
+  <<: *defaults

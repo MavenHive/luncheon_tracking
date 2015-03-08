@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150307155929) do
   enable_extension "plpgsql"
 
   create_table "office_attendances", force: true do |t|
-    t.integer  "User_id"
+    t.integer  "user_id"
     t.boolean  "attending_office"
     t.time     "arriving_time"
     t.datetime "created_at"

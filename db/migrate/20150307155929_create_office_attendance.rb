@@ -1,7 +1,7 @@
 class CreateOfficeAttendance < ActiveRecord::Migration
   def change
     create_table :office_attendances do |t|
-      t.belongs_to User
+      t.references :user
       t.boolean :attending_office
       t.time :arriving_time
 

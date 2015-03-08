@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
-  namespace :api, defaults: { format: 'json' } do
+# , defaults: { format: 'json' }
+  namespace :api do
     post '/office_attendance', to: 'office_attendance#create'
   end
 

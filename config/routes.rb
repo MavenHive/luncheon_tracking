@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   namespace :api, defaults: { format: 'json' } do
-    post '/office_attendance', to: 'office_attendance#update'
+    post '/office_attendance', to: 'office_attendance#create'
   end
 
   # Example of regular route:

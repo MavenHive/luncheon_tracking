@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  user_name: foo_1
+  display_name: 'Foo 1'
   usually_attends_office: false
   usually_eats_in_office: false
   usual_arrival_time: 2015-03-07 16:53:36
 
 two:
-  name: MyString
+  user_name: foo_2
+  display_name: 'Foo 2'
   usually_attends_office: false
   usually_eats_in_office: false
   usual_arrival_time: 2015-03-07 16:53:36

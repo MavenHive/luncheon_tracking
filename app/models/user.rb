@@ -5,8 +5,7 @@ class User < ActiveRecord::Base
     all_attendances = []
     find_each do |user|
       attendance = user.office_attendances.today.last
-      next unless attendance
-      if attendance.attending_office
+      if attendance && attendance.attending_office
         all_attendances << attendance
       elsif user.usually_attends_office
         all_attendances << OfficeAttendance.new(user: user, attending_office_today: true, arriving_time: user.usual_arrival_time)
